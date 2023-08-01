@@ -1,0 +1,22 @@
+<h2>Edit Book</h2>
+<form (ngSubmit)="updateBook()" class="offset-md-1 shadow p-5">
+  <div class="form-group">
+    <label for="category">Category:</label>
+    <input type="text" id="category" name="category" class="form-control" [(ngModel)]="book.category" required>
+  </div>
+  <div class="form-group">
+    <label for="title">Title:</label>
+    <input type="text" id="title" class="form-control"  name="title"  [(ngModel)]="book.title" required>
+  </div>
+  <div class="form-group">
+    <label for="author">Author:</label>
+    <input type="text" id="author" name="author" class="form-control" [(ngModel)]="book.author" required>
+  </div>
+  <div class="form-group">
+    <label for="publisher">Publisher:</label>
+    <input type="text" id="publisher" name="publisher" class="form-control" [(ngModel)]="book.publisher" required>
+  </div>
+  <button type="submit" class="btn btn-info m-2">Save Changes</button>
+  <button type="submit" class="btn btn-primary m-2" routerLink="/">Back</button>
+
+</form>
